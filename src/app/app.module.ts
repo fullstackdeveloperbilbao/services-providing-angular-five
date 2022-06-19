@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared.module';
+import { AppRoutingModule } from './app-routing.module';
+import { EagerLoadedComponent } from './eager-loaded/eager-loaded.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EagerLoadedComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    SharedModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

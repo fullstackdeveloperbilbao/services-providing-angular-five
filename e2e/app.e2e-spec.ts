@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('singleton-services-angular-five App', () => {
+describe('services-providing-angular-five App', () => {
   let page: AppPage;
 
   beforeEach(() => {
