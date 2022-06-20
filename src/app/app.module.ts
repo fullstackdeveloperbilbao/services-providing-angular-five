@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { EagerLoadedOneComponent } from './eager-loaded-one/eager-loaded-one.component';
 import { EagerLoadedTwoComponent } from './eager-loaded-two/eager-loaded-two.component';
 import { SharedService } from './shared/shared.service';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -17,9 +18,10 @@ import { SharedService } from './shared/shared.service';
   ],
   imports: [
     BrowserModule,
+    SharedModule.forRoot(),
     AppRoutingModule,
   ],
-  providers: [SharedService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
