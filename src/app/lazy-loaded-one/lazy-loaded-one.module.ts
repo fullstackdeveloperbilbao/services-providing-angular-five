@@ -8,10 +8,9 @@ import { SharedModule } from '../shared/shared.module';
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule.forChild(),
     LazyLoadedOneRoutingModule,
   ],
   declarations: [LazyLoadedOneComponent],
-  providers: []
+  providers: [SharedService]
 })
 export class LazyLoadedOneModule { }
