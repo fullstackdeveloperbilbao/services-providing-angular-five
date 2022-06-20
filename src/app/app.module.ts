@@ -3,22 +3,23 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
-import { EagerLoadedComponent } from './eager-loaded/eager-loaded.component';
+import { EagerLoadedOneComponent } from './eager-loaded-one/eager-loaded-one.component';
+import { EagerLoadedTwoComponent } from './eager-loaded-two/eager-loaded-two.component';
+import { SharedService } from './shared/shared.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    EagerLoadedComponent
+    EagerLoadedOneComponent,
+    EagerLoadedTwoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule.forRoot()
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

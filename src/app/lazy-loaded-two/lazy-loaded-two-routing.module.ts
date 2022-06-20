@@ -1,13 +1,13 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { LazyLoadedComponent } from "./lazy-loaded.component";
+import { LazyLoadedTwoComponent } from "./lazy-loaded-two.component";
 
 const routes: Routes = [
-  { path: "", component: LazyLoadedComponent },
+  { path: "", component: LazyLoadedTwoComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class LazyLoadedRoutingModule {}
+export class LazyLoadedTwoRoutingModule {}
